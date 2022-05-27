@@ -1,0 +1,19 @@
+.trackItem {
+  padding: 1em;
+  border-bottom: 1px solid #ccc;
+}
+.infoBlock {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-content: space-around;
+}
+.genre {
+  display: inline-block;
+  text-decoration: underline;
+  color: #765;
+}
+
+.duration, .author {
+  display: inline-block
+}

@@ -1,18 +1,47 @@
 .App {
   height: 100vh;
-  background-color: rgb(20, 20, 20);
+  background-color: rgb(222, 225, 210);
+  /* background-image: linear-gradient(
+  0deg,
+  hsl(0deg 0% 100%) 0%,
+  hsl(214deg 77% 96%) 27%,
+  hsl(213deg 76% 92%) 46%,
+  hsl(213deg 76% 87%) 59%,
+  hsl(212deg 76% 83%) 70%,
+  hsl(211deg 76% 78%) 78%,
+  hsl(210deg 77% 73%) 85%,
+  hsl(208deg 77% 67%) 90%,
+  hsl(206deg 78% 61%) 95%,
+  hsl(202deg 82% 50%) 100%
+); */
+  background-image: url('/namroud-gorguis-FZWivbri0Xk-unsplash.jpg');
+  background-position: bottom;
+  background-size: cover;
+  background-repeat: no-repeat;
+  color: #666;
   text-align: center;
-  overflow: hidden;
+  /* overflow: hidden; */
+}
+
+main {
+  clear: both;
 }
 
 .container {
   height: 100%;
+  background-color:rgba(255, 255, 255, 0.7);
   display: flex;
   flex-direction: column;
   justify-content: center;
   padding: 0 30px 0 30px;
-  color: white;
+  color: #333;
   position: relative;
+}
+
+.topbar {
+  position: absolute;
+  top: 10px;
+  right: 10px;
 }
 
 .authed-container {
@@ -26,10 +55,13 @@
   margin: 0;
   font-size: 50px;
   font-weight: bold;
+  /* margin-top: -150px */
 }
 
 .sub-text {
   font-size: 25px;
+  /* position: relative;
+  top: 100px; */
 }
 
 .gradient-text {
@@ -60,7 +92,7 @@
 
 .connect-wallet-button {
   color: white;
-  background: -webkit-linear-gradient(left, #ff8867, #ff52ff);
+  background: -webkit-linear-gradient(left, rgb(75, 75, 67), rgb(226, 174, 15));
   background-size: 200% 200%;
   animation: gradient-animation 4s ease infinite;
   max-width: 300px;
@@ -103,7 +135,7 @@ button:disabled {
 .footer-text {
   font-size: 16px;
   font-weight: bold;
-  color: white;
+  color: #666;
 }
 
 .connected-container input[type='text'] {
