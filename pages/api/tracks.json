@@ -1,0 +1,24 @@
+[
+  {
+    "id": 1,
+    "name": "Welcome to the Village",
+    "genre": "Orchestral",
+    "filename": "Welcome to the Village.mp3",
+    "price": 5,
+    "token": "USDC",
+    "cid": "bafybeih62m7cld3dfsud5huzscvy7sywdittbgbtydlp57hhuhbx6cudp4",
+    "duration": "02:23",
+    "author": "MOS"    
+  },
+  {
+    "id": 2,
+    "name": "The Cathedral",
+    "genre": "Orchestral",
+    "filename": "Welcome to the Village.mp3",
+    "price": 0.1,
+    "token": "SOL",
+    "cid": "bafybeih62m7cld3dfsud5huzscvy7sywdittbgbtydlp57hhuhbx6cudp4",
+    "duration": "01:57",
+    "author": "MOS"    
+  }
+]

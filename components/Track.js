@@ -3,7 +3,10 @@ import React from 'react'
 import { Buy } from './Buy'
 import styles from './track.module.css'
 
-export const Track = ({ track: { id, name, genre, filename, duration, author, price, token } }) => {
+export const Track = ({
+  track: { id, name, genre, filename, duration, author, price, token },
+  isOwned = false,
+}) => {
   const { connected } = useWallet()
   return (
     <div className={styles.trackItem}>
@@ -13,10 +16,11 @@ export const Track = ({ track: { id, name, genre, filename, duration, author, pr
         <p className={styles.duration}>Duration: {duration}</p>
         <p className={styles.author}>Author: {author}</p>
       </div>
-      { connected ? 
-        <Buy itemId={id} price={price} /> :
+      {connected ? (
+        <Buy itemId={id} price={price} token={token} isOwned={isOwned} />
+      ) : (
         <p>Connect your wallet!</p>
-      }
+      )}
     </div>
   )
 }
